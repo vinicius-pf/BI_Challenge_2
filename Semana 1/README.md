@@ -43,19 +43,28 @@ As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'I
 A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/).
 
 
-### Transformações no power Bi
+### Transformações no Power BI
 
-receita de texto para número decimal fixo
+receita de texto para número decimal fixo, média das notas de número para número decimal.
 
 ## Métricas
 
 A empresa requisitou que as seguintes métricas estivessem no relatório:
 
-- Dinheiro ganho por estrela
-- Filme mais votado
-  
+- Dinheiro ganho por Estrela 1, Estrela 2, Estrela 3 e Estrela 4
+- Filmes mais votados
+- Gêneros mais rentáveis
+- Estrelas que mais aparecem nos filmes
+- Percentual dos (n) gêneros mais explorados
 
-Além destas, também foram desenvolvidas algumas métricas extras:
+Além disso, a empresa também requisitou uma exploração das colunas 'Meta_Score', 'IMDB_Rating' e 'Noofvotes'. Como um bônus, porém sem a necessidade de aparecerem no relatório, a empresa requisitou as seguintes tarefas:
+
+- Classificação indicativa
+- Tradução do título das colunas
+- Incluir títulos em português
+- Diretores mais rentáveis
+- Pares mais comuns entre diretores e estrelas
+
 
 
   
