@@ -2,42 +2,32 @@
 
 ## Dashboard Operacional
 
-A Alura Log, uma empresa de logística, está enfrentando alguns problemas por conta do aumento de demanda durante a pandemia da COVID-19. Para manter a qualidade do serviço, percebeu que precisava acompanhar algumas métricas para conseguir efetuar algumas decisões operacionais. O dashboard aqui produzido trás as métricas pedidas, assim como algumas extras, desenvolvidas com o intuito de melhorar a qualidade do serviço da empresa. 
+A **Alura Films** contratou você para fazer uma pesquisa de mercado, com a finalidade de identificar a **seleção ideal** de elenco e produção. Para isso, ela disponibilizou uma base de dados do IMDB com 1000 filmes. Use suas habilidades e conhecimentos para **explorar, tratar e transformar os dados** em informações relevantes que auxiliem na **tomada de decisão** da empresa. 
 
 ## Base de Dados
 
-A empresa disponibilizou 4 tabelas no formato CSV:
+A empresa disponibilizou 2 tabelas no formato CSV:
   
-  1. Tabela pedidos, que contém o registro de todos os pedidos feitos pelos clientes.
-  2. Tabela produtos, que contém os produtos cadastrados e seus valores.
-  3. Tabela veículos, que contém veículos registrados que fazem o transporte dos produtos
-  4. Tabela estoque, que contém o registro de estoque dos produtos por mês
+  1. Filmes, que contém informações como: receita, ano de lançamento, resumo, título, diretor, elenco, entre outros.
+  2. Posters, que contém as imagens dos posters dos filmes.
+
+## Tratamento de dados
+
+A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/).
+
+A primeira transformaçãon
 
 ### Relacionamentos
 
-Há 3 relacionamentos entre as tabelas:
-  
-1. A 'Tabela pedidos' se relaciona com a 'Tabela produtos' pela coluna 'ID Produtos', com uma cardinalidade de muitos para 1 (n:1)
-2. A 'Tabela estoque' se relaciona com a 'Tabela produtos' pela coluna 'ID Produtos', com uma cardinalidade de muitos para 1 (n:1)
-3. A 'Tabela pedidos' se relaciona com a 'Tabela veículos' pela coluna 'ID Veículo', com uma cardinalidade de muitos para 1 (n:1)
-
+As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'Id_Title'.
 
 ## Métricas
 
 A empresa requisitou que as seguintes métricas estivessem no relatório:
   
-  - S2D(Ship to door): Tempo, em dias, que a entrega demorou a ser efetuada
-  - Número de entregas por estado
-  - Número de veículos disponíveis
-  - Nível de estoque por ano
-  - Número de entregas atrasadas e no prazo
 
 Além destas, também foram desenvolvidas algumas métricas extras:
-  - Faturamento total, por ano e por estado
-  - S2D médio por estado
+
 
   
-## Ferramentas utilizadas
-  Para a criação do dashboard foi utilizado o software Power BI. As imagens de fundo das páginas foram criadas no Microsoft Power Point.
-
-
+## 
