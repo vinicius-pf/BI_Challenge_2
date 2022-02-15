@@ -4,12 +4,29 @@ A Alura Films contratou você para fazer uma pesquisa de mercado, com a finalida
 
 ## Base de Dados
 
-A empresa disponibilizou 2 tabelas no formato CSV:
+A empresa disponibilizou 2 tabelas no formato CSV, com informações de textos e dados em inglês.:
   
   1. Filmes, que contém informações como: receita, ano de lançamento, resumo, título, diretor, elenco, entre outros.
   2. Posters, que contém as imagens dos posters dos filmes.
 
-Além das tabelas, a empresa também disponibilizou um arquivo com um resumo sobre cada colunas das tabelas:
+Além das tabelas, a empresa também disponibilizou um arquivo com um resumo sobre cada colunas das tabelas. Com essa descrição, alterei os títulos das colunas para o portugês durante a fase de tratamento dos dados.
+
+Título Original da Coluna | Descrição da empresa | Título traduzido
+-------------------------------------------------------------------
+	Id_Title | Id do filme |
+	Series_Title | Nome do filme |
+	Released_Year | Ano em que o filme foi lançado |
+	Certificate | Classificação obtido por esse filme |
+	Runtime | Tempo de execução total do filme |
+	Genre | Gênero do filme |
+	IMDB_Rating | Classificação do filme no site do IMDB |
+	Overview | mini-história/resumo |
+	Meta_score | Pontuação obtida pelo filme |
+	Director | Nome do Diretor |
+	Star1,Star2,Star3,Star4 | Nome das Estrelas |
+	Noofvotes | Número total de votos |
+	Gross | Dinheiro ganho por esse filme |
+
 
 
 ## Tratamento de dados
