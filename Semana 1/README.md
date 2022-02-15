@@ -12,7 +12,7 @@ A empresa disponibilizou 2 tabelas no formato CSV, com informações de textos e
 Além das tabelas, a empresa também disponibilizou um arquivo com um resumo sobre cada colunas das tabelas. Com essa descrição, alterei os títulos das colunas para o portugês durante a fase de tratamento dos dados.
 
 Título Original da Coluna | Descrição da empresa | Título traduzido
--------------------------------------------------------------------
+--------------- | -------------------------------- | -------------------
 	Id_Title | Id do filme |
 	Series_Title | Nome do filme |
 	Released_Year | Ano em que o filme foi lançado |
