@@ -42,6 +42,11 @@ As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'I
 
 A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/).
 
+
+### Transformações no power Bi
+
+receita de texto para número decimal fixo
+
 ## Métricas
 
 A empresa requisitou que as seguintes métricas estivessem no relatório:
