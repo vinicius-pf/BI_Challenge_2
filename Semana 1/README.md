@@ -50,6 +50,9 @@ receita de texto para número decimal fixo
 ## Métricas
 
 A empresa requisitou que as seguintes métricas estivessem no relatório:
+
+- Dinheiro ganho por estrela
+- Filme mais votado
   
 
 Além destas, também foram desenvolvidas algumas métricas extras:
