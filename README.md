@@ -1,6 +1,6 @@
 # Alura Challenge BI - 2ª Edição
 
-Neste Repositório estão os meus projetos desenvolvidos ao longo do mês de Setembro de 2021 como parte do [Alura Challenge BI](https://www.alura.com.br/challenges/bi/]). O curso implementa o Challenge Based Learning, desenvolvido em partes pela Apple com o objetivo de aprofundar os conhecimentos dos alunos em uma área específica.
+Neste Repositório estão os meus projetos desenvolvidos nos meses de Fevereiro e Março de 2022 como parte do [Alura Challenge BI](https://www.alura.com.br/challenges/bi-2/). O curso implementa o Challenge Based Learning, desenvolvido em partes pela Apple com o objetivo de aprofundar os conhecimentos dos alunos em uma área específica.
 
 ## Sobre
 
