@@ -13,19 +13,19 @@ Além das tabelas, a empresa também disponibilizou um arquivo com um resumo sob
 
 Título Original da Coluna | Descrição da empresa | Título traduzido
 --------------- | -------------------------------- | -------------------
-	Id_Title | Id do filme |
-	Series_Title | Nome do filme |
-	Released_Year | Ano em que o filme foi lançado |
-	Certificate | Classificação obtido por esse filme |
-	Runtime | Tempo de execução total do filme |
-	Genre | Gênero do filme |
-	IMDB_Rating | Classificação do filme no site do IMDB |
-	Overview | mini-história/resumo |
-	Meta_score | Pontuação obtida pelo filme |
-	Director | Nome do Diretor |
-	Star1,Star2,Star3,Star4 | Nome das Estrelas |
-	Noofvotes | Número total de votos |
-	Gross | Dinheiro ganho por esse filme |
+Id_Title | Id do filme | Id_Title
+Series_Title | Nome do filme | Título
+Released_Year | Ano em que o filme foi lançado | Ano de lançamento
+Certificate | Classificação obtido por esse filme | Classificação indicativa
+Runtime | Tempo de execução total do filme | Duração do filme
+Genre | Gênero do filme | Gênero
+IMDB_Rating | Classificação do filme no site do IMDB | Nota IMDb
+Overview | mini-história/resumo | Resumo
+Meta_score | Pontuação obtida pelo filme | Nota Metacritic
+Director | Nome do Diretor | Diretor
+Star1,Star2,Star3,Star4 | Nome das Estrelas | Estrela1, Estrela2, Estrela3, Estrela4
+Noofvotes | Número total de votos | Número de votos
+Gross | Dinheiro ganho por esse filme | Receita
 
 
 
