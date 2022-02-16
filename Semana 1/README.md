@@ -28,6 +28,7 @@ Noofvotes | Número total de votos | Número de votos
 Gross | Dinheiro ganho por esse filme | Receita
 
 Para o outro arquivo a empresa também disponibilizou uma explicação de cada coluna, porém não houve uma tradução dos títulos de coluna
+
 Título Original da Coluna | Descrição da empresa
 --------------- | --------------------------------
 Id_Title | Id do filme
@@ -41,6 +42,32 @@ As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'I
 ## Tratamento de dados
 
 A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/). O passo a passo da análise, incluindo comentários e referências esta no arquivo (Tratamento dos dados)[https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/dataset/Tratamento%20dos%20dados.ipynb] na pasta 'dataset'.
+
+Com a análise exploratória, foram encontrados 7 pontos de atenção. Esses foram tratados em sua maioria dentro do Python Pandas, outros foram tratados diretamente no Power BI.
+
+Primeiro, para suprir uma das demandas extras da empresa, traduzi os títulos das colunas. Apesar de não ser necessário para as análises futuras, isso facilitará futuras aplicações do mesmo dataset.
+~~~pyton
+traducoes = {'Series_Title' : 'Título', 'Gross' : 'Receita', 'Released_Year' : 'Ano de lançamento', 'Certificate' : 'Classificação indicativa',
+       'Runtime' : 'Duração do filme', 'Genre' : 'Gênero', 'IMDB_Rating' : 'Nota IMDb', 'Overview' : 'Resumo', 'Meta_score' : 'Nota Metacritic', 'Director' : 'Diretor',
+       'Star1' : 'Estrela 1', 'Star2' : 'Estrela 2', 'Star3' : 'Estrela 3', 'Star4' : 'Estrela 4', 'Noofvotes' : 'Número de votos'}
+
+dados_traduzidos.rename(traducoes, axis=1, inplace= True)
+~~~~
+
+2 - Alguns filmes tem 2 ou mais 'Genre'. A empresa requisitou que fossem feitas análises quanto a rentabilidade de gêneros de filmes, então essa coluna poderá ser dividida para facilitar essa análise.
+
+3 - A coluna 'Certificate' não tem uma explicação ainda. Acredito que seja a classificação indicativa do filme, porém, pesquisando no próprio IMDb <sup>[1](https://help.imdb.com/article/contribution/titles/certificates/GU757M8ZJ9ZPXB39?ref_=helpart_nav_27#)</sup>, não existe nenhum país que utilize as letras que apareceram. Devo continuar explorando essa coluna.
+
+4 - A coluna 'IMDB_Rating' corresponde aos votos dos usuários do site IMDb, enquanto a coluna 'Meta_Score' corresponde à pontuação no site da Metacritic.<sup>[2](https://www.quora.com/What-does-the-Metascore-score-on-IMDb-mean)</sup>
+
+5 - Os valores de 'Gross' são estimados em dólares <sup>[3](https://help.imdb.com/article/imdb/discover-watch/box-office-faq/G4UCJ3GMFX6F23ZX#)</sup>. Para informação mais regionalizada, irei criar uma coluna utilizando a cotação do dólar no dia 14/02/2022 para saber o valor em reais.
+
+
+
+
+
+
+Para a tabela que contém as informações dos posters de cada filme, não houve necessidade de tratamento de dados.
 
 
 
