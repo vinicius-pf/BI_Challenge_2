@@ -53,7 +53,7 @@ Para a coluna de classificação indicativa, houveram alguns problemas. Além de
 
 Dentro da coluna com informações das receitas, há 11 filmes com valores faltantes. Desses, 2 foram disponibilizados por serviços de streaming, sem que houvesse a venda de ingressos. Para os outros, há possibilidade de encontrar valores de receita em sites. Assim, incluirei diretamente no Power BI as informações de bilheteria para os filmes com informações de bilheteria em sites não afiliados ao IMDb. Para uma localização dos dados, também irei criar uma nova coluna com valores de bilheteria em reais. 
 
-Há também valores faltantes na coluna referente às notas dadas pelo Metacritic. Cerca de 14% dos filmes da base de dados não possuem essa nota. Por se tratar de uma parcela considerável da base, manterei o filme, incluindo uma média de notas de acordo com os gêneros dos filmes.
+Há também valores faltantes na coluna referente às notas dadas pelo Metacritic. Cerca de 14% dos filmes da base de dados não possuem essa nota. Por se tratar de uma parcela considerável da base, manterei o filme sem notas. Caso seja necessário, poderei incluir uma média de acordo com o gênero principal do filme. 
 
 
 
