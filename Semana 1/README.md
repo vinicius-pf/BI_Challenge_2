@@ -40,7 +40,8 @@ As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'I
 
 ## Tratamento de dados
 
-A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/).
+A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/). O passo a passo da análise, incluindo comentários e referências esta no arquivo (Tratamento dos dados)[https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/dataset/Tratamento%20dos%20dados.ipynb] na pasta 'dataset'.
+
 
 
 ### Transformações no Power BI
@@ -59,13 +60,25 @@ A empresa requisitou que as seguintes métricas estivessem no relatório:
 
 Além disso, a empresa também requisitou uma exploração das colunas 'Meta_Score', 'IMDB_Rating' e 'Noofvotes'. Como um bônus, porém sem a necessidade de aparecerem no relatório, a empresa requisitou as seguintes tarefas:
 
-- Classificação indicativa
+- Padronização classificação indicativa
 - Tradução do título das colunas
-- Incluir títulos em português
+- Incluir títulos em português dos filmes
 - Diretores mais rentáveis
 - Pares mais comuns entre diretores e estrelas
 
-
+Para deixar o dashboard mais completo, também incluirei algumas métricas e etapas que acredito que possam agregar a tomada de decisão da empresa:
+- Filmes com maior bilheteria
+- Tradução do resumo dos filmes
 
   
-## 
+## Desenvolvimento do dashboard
+
+Inicialmente, decidi fazer um dashboard com 2 páginas. A primeira mostrará as métricas requisitadas pela empresa, utilizando gráficos de barra para mostrar as principais métricas pedidas. O gráfico com informações sobre os filmes mais votados incluirá uma dica de ferramenta, para informações sobre diretor, receita, poster e ano de lançamento para cada filme quando ele estiver em destaque.
+
+A segunda página servirá para informações completas sobre cada filme, com as mesmas informações que a dica de ferramenta, mas incluindo também as estrelas e os gêneros. Nessa página também contará com filtros para segmentação de dados por ano, e escolha indiviual dos filmes. Para esses filtros, criarei um menu utilizando a ferramenta de indicadores do Power BI.
+
+### Primeira página
+
+### Segunda página
+
+### Dica de ferramenta
