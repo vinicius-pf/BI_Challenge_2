@@ -10,7 +10,7 @@ Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://
 ## Projetos desenvolvidos
 
 
-### [Semana 1](https://www.alura.com.br/challenges/bi-2): Mergulhando no mercado cinematográfico - AluraFilms
+### [Semana 1](https://bit.ly/Semana1_Challenge): Mergulhando no mercado cinematográfico - AluraFilms
 
 ![Página Inicial](https://github.com/vinicius-pf/Challenge_BI/blob/main/Semana%201/Screenshots/P%C3%A1gina%201.PNG?raw=true)
 
