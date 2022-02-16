@@ -55,18 +55,13 @@ Dentro da coluna com informações das receitas, há 11 filmes com valores falta
 
 Há também valores faltantes na coluna referente às notas dadas pelo Metacritic. Cerca de 14% dos filmes da base de dados não possuem essa nota. Por se tratar de uma parcela considerável da base, manterei o filme sem notas. Caso seja necessário, poderei incluir uma média de acordo com o gênero principal do filme. 
 
-
-
-
-
-
 Para a tabela que contém as informações dos posters de cada filme, não houve necessidade de tratamento de dados.
 
 
 
-### Transformações no Power BI
+### Tratamentos no Power BI
 
-receita de texto para número decimal fixo, média das notas de número para número decimal.
+receita de texto para número decimal fixo, média das notas de número para número decimal. Trabalho para a contagem de filmes por estrela e por genero.
 
 ## Métricas
 
