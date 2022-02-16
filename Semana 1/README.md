@@ -43,7 +43,7 @@ As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'I
 
 A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/). O passo a passo da análise, incluindo comentários e referências esta no arquivo (Tratamento dos dados)[https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/dataset/Tratamento%20dos%20dados.ipynb] na pasta 'dataset'.
 
-Com a análise exploratória, foram encontrados 6 pontos de atenção. Esses foram tratados em sua maioria dentro do Python Pandas, outros foram tratados diretamente no Power BI.
+Com a análise exploratória, foram constatados alguns pontos de atenção. Esses foram tratados em sua maioria dentro do Python Pandas, outros foram tratados diretamente no Power BI.
 
 Primeiro, para suprir uma das demandas extras da empresa, traduzi os títulos das colunas. Apesar de não ser necessário para as análises futuras, isso facilitará futuras aplicações do mesmo dataset.
 
@@ -52,6 +52,8 @@ Em seguida, dividi a coluna de generos em 3 colunas novas. A divisão se deu par
 Para a coluna de classificação indicativa, houveram alguns problemas. Além de classificações indicativas de países diversos, incluindo Brasil, EUA e Índia, existem também classificações indicativas que não são mais utilizadas. Apesar disso, há alguns dados redundantes, que foram tratados. Como desafio extra, a empresa pediu que os dados dessa coluna fossem de unificados, trazendo apenas a classificação indicativa brasileira.
 
 Dentro da coluna com informações das receitas, há 11 filmes com valores faltantes. Desses, 2 foram disponibilizados por serviços de streaming, sem que houvesse a venda de ingressos. Para os outros, há possibilidade de encontrar valores de receita em sites. Assim, incluirei diretamente no Power BI as informações de bilheteria para os filmes com informações de bilheteria em sites não afiliados ao IMDb. Para uma localização dos dados, também irei criar uma nova coluna com valores de bilheteria em reais. 
+
+Há também valores faltantes na coluna referente às notas dadas pelo Metacritic. Cerca de 14% dos filmes da base de dados não possuem essa nota. Por se tratar de uma parcela considerável da base, manterei o filme, incluindo uma média de notas de acordo com os gêneros dos filmes.
 
 
 
