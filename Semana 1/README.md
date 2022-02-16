@@ -46,14 +46,14 @@ A tabela de Filmes precisou de um tratamento de dados após aplicação de uma a
 Com a análise exploratória, foram encontrados 7 pontos de atenção. Esses foram tratados em sua maioria dentro do Python Pandas, outros foram tratados diretamente no Power BI.
 
 Primeiro, para suprir uma das demandas extras da empresa, traduzi os títulos das colunas. Apesar de não ser necessário para as análises futuras, isso facilitará futuras aplicações do mesmo dataset.
-'''
+`
 
 traducoes = {'Series_Title' : 'Título', 'Gross' : 'Receita', 'Released_Year' : 'Ano de lançamento', 'Certificate' : 'Classificação indicativa',
        'Runtime' : 'Duração do filme', 'Genre' : 'Gênero', 'IMDB_Rating' : 'Nota IMDb', 'Overview' : 'Resumo', 'Meta_score' : 'Nota Metacritic', 'Director' : 'Diretor',
        'Star1' : 'Estrela 1', 'Star2' : 'Estrela 2', 'Star3' : 'Estrela 3', 'Star4' : 'Estrela 4', 'Noofvotes' : 'Número de votos'}
 
 dados_traduzidos.rename(traducoes, axis=1, inplace= True)
-'''
+`
 
 2 - Alguns filmes tem 2 ou mais 'Genre'. A empresa requisitou que fossem feitas análises quanto a rentabilidade de gêneros de filmes, então essa coluna poderá ser dividida para facilitar essa análise.
 
