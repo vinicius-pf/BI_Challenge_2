@@ -8,12 +8,12 @@ O Alura Challenge constituiu de 3 desafios semanais para que os participantes pu
 Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://trello.com/), disponibilizando um conjunto de dados e algumas informações pertinentes da empresa, assim como informando as métricas que deveriam ser exibidas na versão final do dashboard. Além disso, foram disponibilizados links para cursos da plataforma Alura, com o intuito de aprofundar o conhecimento dos participantes.
 
 * [Projetos desenvolvidos](#projetos-desenvolvidos)
-    + [Semana 1: Mergulhando no mercado cinematográfico - AluraFilms](#semana-1--mergulhando-no-mercado-cinematogr-fico---alurafilms)
-      - [Página de Receitas](#p-gina-de-receitas)
-      - [Página de Rankings](#p-gina-de-rankings)
-      - [Página de filmes](#p-gina-de-filmes)
-    + [Semana 2: Entendendo o mercado de restaurantes da Índia.](#semana-2--entendendo-o-mercado-de-restaurantes-da--ndia)
-    + [Semana 3: Analisando o setor de vendas da Alura Skimó.](#semana-3--analisando-o-setor-de-vendas-da-alura-skim-)
+    + [Semana 1: Mergulhando no mercado cinematográfico - AluraFilms](##semana-1:-mergulhando-no-mercado-cinematográfico---alurafilms)
+      - [Página de Receitas](#página-de-receitas)
+      - [Página de Rankings](#página-de-rankings)
+      - [Página de filmes](#página-de-filmes)
+    + [Semana 2: Entendendo o mercado de restaurantes da Índia.](#semana-2--entendendo-o-mercado-de-restaurantes-da-índia)
+    + [Semana 3: Analisando o setor de vendas da Alura Skimó.](#semana-3--analisando-o-setor-de-vendas-da-alura-skimó-)
 
 
 ## Projetos desenvolvidos
