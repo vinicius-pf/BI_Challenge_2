@@ -7,19 +7,18 @@ Neste Repositório estão os meus projetos desenvolvidos nos meses de Fevereiro 
 O Alura Challenge constituiu de 3 desafios semanais para que os participantes pudessem desenvolver novos conhecimentos, aprender novas ferramentas e criar um portifólio na área de Business Inteligence e ciência de dados, enquanto era simulado um fluxo de trabalho em uma empresa. 
 Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://trello.com/), disponibilizando um conjunto de dados e algumas informações pertinentes da empresa, assim como informando as métricas que deveriam ser exibidas na versão final do dashboard. Além disso, foram disponibilizados links para cursos da plataforma Alura, com o intuito de aprofundar o conhecimento dos participantes.
 
-* [Projetos desenvolvidos](#projetos-desenvolvidos)
-    + [[Semana 1](https://bit.ly/Semana1_Challenge): Mergulhando no mercado cinematográfico - AluraFilms](#-semana-1--https---bitly-semana1-challenge---mergulhando-no-mercado-cinematogr-fico---alurafilms)
+    + [Semana 1: Mergulhando no mercado cinematográfico - AluraFilms](#semana-1--mergulhando-no-mercado-cinematogr-fico---alurafilms)
       - [Página de Receitas](#p-gina-de-receitas)
       - [Página de Rankings](#p-gina-de-rankings)
       - [Página de filmes](#p-gina-de-filmes)
-    + [[Semana 2](https://www.alura.com.br/challenges/bi-2): Entendendo o mercado de restaurantes da Índia.](#-semana-2--https---wwwaluracombr-challenges-bi-2---entendendo-o-mercado-de-restaurantes-da--ndia)
-    + [[Semana 3](https://www.alura.com.br/challenges/bi-2): Analisando o setor de vendas da Alura Skimó.](#-semana-3--https---wwwaluracombr-challenges-bi-2---analisando-o-setor-de-vendas-da-alura-skim-)
+    + [Semana 2: Entendendo o mercado de restaurantes da Índia.](#semana-2--entendendo-o-mercado-de-restaurantes-da--ndia)
+    + [Semana 3: Analisando o setor de vendas da Alura Skimó.](#semana-3--analisando-o-setor-de-vendas-da-alura-skim-)
 
 
 ## Projetos desenvolvidos
 
 
-### [Semana 1](https://bit.ly/Semana1_Challenge): Mergulhando no mercado cinematográfico - AluraFilms
+### Semana 1: Mergulhando no mercado cinematográfico - AluraFilms
 
 ![Página Inicial](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/Screenshots/P%C3%A1gina%20inicial.PNG?raw=true)
 
@@ -77,13 +76,10 @@ Na última página do relatório, é exibido um resumo sobre cada filme. Com o f
 
 
 
-### [Semana 2](https://www.alura.com.br/challenges/bi-2): Entendendo o mercado de restaurantes da Índia.
+### Semana 2: Entendendo o mercado de restaurantes da Índia.
 
-![Página Inicial](https://github.com/vinicius-pf/Challenge_BI/blob/main/Semana%202/Screenshots/P%C3%A1gina%20Inicial.PNG?raw=true)
+### Semana 3: Analisando o setor de vendas da Alura Skimó.
 
-### [Semana 3](https://www.alura.com.br/challenges/bi-2): Analisando o setor de vendas da Alura Skimó.
-
-![Página Inicial](https://github.com/vinicius-pf/Challenge_BI/blob/main/Semana%203%20e%204/Screenshots/P%C3%A1gina%20Inicial.PNG?raw=true)
 
 
 
