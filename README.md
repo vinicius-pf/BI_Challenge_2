@@ -8,7 +8,7 @@ O Alura Challenge constituiu de 3 desafios semanais para que os participantes pu
 Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://trello.com/), disponibilizando um conjunto de dados e algumas informações pertinentes da empresa, assim como informando as métricas que deveriam ser exibidas na versão final do dashboard. Além disso, foram disponibilizados links para cursos da plataforma Alura, com o intuito de aprofundar o conhecimento dos participantes.
 
 * [Projetos desenvolvidos](#projetos-desenvolvidos)
-    + [Semana 1: Mergulhando no mercado cinematográfico - AluraFilms](##semana-1:-mergulhando-no-mercado-cinematográfico---alurafilms)
+    + [Semana 1: Mergulhando no mercado cinematográfico - AluraFilms](##semana-1--mergulhando-no-mercado-cinematográfico---alurafilms)
       - [Página de Receitas](#página-de-receitas)
       - [Página de Rankings](#página-de-rankings)
       - [Página de filmes](#página-de-filmes)
