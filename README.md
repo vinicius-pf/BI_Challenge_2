@@ -20,7 +20,7 @@ Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://
 
 ### Semana 1 Mergulhando no mercado cinematográfico
 
-[Clique aqui para ir ao dashboard](bit.ly/Semana1_Challenge)
+[Clique aqui para ir ao dashboard](https://bit.ly/Semana1_Challenge)
 
 ![Página Inicial](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/Screenshots/P%C3%A1gina%20inicial.PNG?raw=true)
 
