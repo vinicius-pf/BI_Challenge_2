@@ -34,7 +34,7 @@ Para o gráfico de atores, a dica de ferramentas trás a contagem de filmes que 
 
 No gráfico de filmes, a dica de ferramentas mostra o poster do filme, assim como a informação de diretor e das notas que o filme recebeu no IMDb e no Metacritic.
 
-Nessa página há dois botões no topo. Um de 'Diretores', altera o gráfico de atores para um de diretores mais rentáveis. Esse gráfico também tem uma dica de ferramentas contendo informações de número de filmes produzido, média de notas no IMDb e no Metacritic, assim como uma tabela em que mostra quais atores mais atuaram em seus filmes, mostrando também a contagem de filmes que a dupla produziu.
+Nessa página há dois botões no topo. Um de 'Diretores', altera o gráfico de atores para um que ilustra os 10 diretores mais rentáveis. Esse gráfico também possui uma dica de ferramentas contendo informações de número de filmes produzido, média de notas no IMDb e no Metacritic, assim como uma tabela em que mostra quais atores mais atuaram em seus filmes, mostrando também a contagem de filmes que a dupla produziu.
 
 ![Página receita diretores](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/Screenshots/P%C3%A1gina%20de%20receita%20Diretores.PNG?raw=true)
 
