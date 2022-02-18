@@ -50,7 +50,7 @@ Nessa página há dois botões no topo. Um de 'Diretores', altera o gráfico de 
 
 ![Dicas diretor](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/Screenshots/Dicas%20Diretor.PNG?raw=true)
 
-Um outro botão faz o gráfico mostrar a receita por gênero do filme. Este gráfico também tem uma dica de ferramentas, mostrando a quantidade de filmes que são do gênero, uma tabela com a quantidade de filmes produzidos desse gênero por diretor, assim como a porcentagem total dos filmes que são desse gênero.
+Um outro botão faz o gráfico mostrar a receita por gênero do filme. Para este gráfico, não há dica de ferramentas. O gráfico, porém, ao selecionar uma das barras, faz a filtragem no gráfico com as receitas dos filmes.
 
 ![Página receita gêneros](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/Screenshots/P%C3%A1gina%20de%20receita%20G%C3%AAneros.PNG)
 
