@@ -7,6 +7,15 @@ Neste Repositório estão os meus projetos desenvolvidos nos meses de Fevereiro 
 O Alura Challenge constituiu de 3 desafios semanais para que os participantes pudessem desenvolver novos conhecimentos, aprender novas ferramentas e criar um portifólio na área de Business Inteligence e ciência de dados, enquanto era simulado um fluxo de trabalho em uma empresa. 
 Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://trello.com/), disponibilizando um conjunto de dados e algumas informações pertinentes da empresa, assim como informando as métricas que deveriam ser exibidas na versão final do dashboard. Além disso, foram disponibilizados links para cursos da plataforma Alura, com o intuito de aprofundar o conhecimento dos participantes.
 
+* [Projetos desenvolvidos](#projetos-desenvolvidos)
+    + [[Semana 1](https://bit.ly/Semana1_Challenge): Mergulhando no mercado cinematográfico - AluraFilms](#-semana-1--https---bitly-semana1-challenge---mergulhando-no-mercado-cinematogr-fico---alurafilms)
+      - [Página de Receitas](#p-gina-de-receitas)
+      - [Página de Rankings](#p-gina-de-rankings)
+      - [Página de filmes](#p-gina-de-filmes)
+    + [[Semana 2](https://www.alura.com.br/challenges/bi-2): Entendendo o mercado de restaurantes da Índia.](#-semana-2--https---wwwaluracombr-challenges-bi-2---entendendo-o-mercado-de-restaurantes-da--ndia)
+    + [[Semana 3](https://www.alura.com.br/challenges/bi-2): Analisando o setor de vendas da Alura Skimó.](#-semana-3--https---wwwaluracombr-challenges-bi-2---analisando-o-setor-de-vendas-da-alura-skim-)
+
+
 ## Projetos desenvolvidos
 
 
