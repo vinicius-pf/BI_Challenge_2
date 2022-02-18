@@ -34,35 +34,6 @@ Título Original da Coluna | Descrição da empresa
 Id_Title | Id do filme
 Poster_Link | Link do pôster que o imdb está usando
 
-
-### Relacionamentos
-
-As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'Id_Title'.
-
-## Tratamento de dados
-
-A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/). O passo a passo da análise, incluindo comentários e referências esta no arquivo (Tratamento dos dados)[https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/dataset/Tratamento%20dos%20dados.ipynb] na pasta 'dataset'.
-
-Com a análise exploratória, foram constatados alguns pontos de atenção. Esses foram tratados em sua maioria dentro do Python Pandas, outros foram tratados diretamente no Power BI.
-
-Primeiro, para suprir uma das demandas extras da empresa, traduzi os títulos das colunas. Apesar de não ser necessário para as análises futuras, isso facilitará futuras aplicações do mesmo dataset.
-
-Em seguida, dividi a coluna de generos em 3 colunas novas. A divisão se deu para que fosse possível contar corretamente a receita de cada genero individualmente. Em conjunto com a divisão, os gêneros também foram traduzidos para o português.
-
-Para a coluna de classificação indicativa, houveram alguns problemas. Além de classificações indicativas de países diversos, incluindo Brasil, EUA e Índia, existem também classificações indicativas que não são mais utilizadas. Apesar disso, há alguns dados redundantes, que foram tratados. Como desafio extra, a empresa pediu que os dados dessa coluna fossem de unificados, trazendo apenas a classificação indicativa brasileira.
-
-Dentro da coluna com informações das receitas, há 11 filmes com valores faltantes. Desses, 2 foram disponibilizados por serviços de streaming, sem que houvesse a venda de ingressos. Para os outros, há possibilidade de encontrar valores de receita em sites. Assim, incluirei diretamente no Power BI as informações de bilheteria para os filmes com informações de bilheteria em sites não afiliados ao IMDb. Para uma localização dos dados, também irei criar uma nova coluna com valores de bilheteria em reais. 
-
-Há também valores faltantes na coluna referente às notas dadas pelo Metacritic. Cerca de 14% dos filmes da base de dados não possuem essa nota. Por se tratar de uma parcela considerável da base, manterei o filme sem notas. Caso seja necessário, poderei incluir uma média de acordo com o gênero principal do filme. 
-
-Para a tabela que contém as informações dos posters de cada filme, não houve necessidade de tratamento de dados.
-
-
-
-### Tratamentos no Power BI
-
-receita de texto para número decimal fixo, média das notas de número para número decimal. Trabalho para a contagem de filmes por estrela e por genero.
-
 ## Métricas
 
 A empresa requisitou que as seguintes métricas estivessem no relatório:
@@ -85,15 +56,40 @@ Para deixar o dashboard mais completo, também incluirei algumas métricas e eta
 - Filmes com maior bilheteria
 - Tradução do resumo dos filmes
 
-  
-## Desenvolvimento do dashboard
 
-Inicialmente, decidi fazer um dashboard com 2 páginas. A primeira mostrará as métricas requisitadas pela empresa, utilizando gráficos de barra para mostrar as principais métricas pedidas. O gráfico com informações sobre os filmes mais votados incluirá uma dica de ferramenta, para informações sobre diretor, receita, poster e ano de lançamento para cada filme quando ele estiver em destaque.
+### Relacionamentos
 
-A segunda página servirá para informações completas sobre cada filme, com as mesmas informações que a dica de ferramenta, mas incluindo também as estrelas e os gêneros. Nessa página também contará com filtros para segmentação de dados por ano, e escolha indiviual dos filmes. Para esses filtros, criarei um menu utilizando a ferramenta de indicadores do Power BI.
+As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'Id_Title'.
 
-### Primeira página
 
-### Segunda página
+## Tratamento de dados
 
-### Dica de ferramenta
+A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/). O passo a passo da análise, incluindo comentários e referências esta no arquivo (Tratamento dos dados)[https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/dataset/Tratamento%20dos%20dados.ipynb] na pasta 'dataset'.
+
+Com a análise exploratória, foram constatados alguns pontos de atenção. Esses foram tratados em sua maioria dentro do Python Pandas, outros foram tratados diretamente no Power BI.
+
+Primeiro, para suprir uma das demandas extras da empresa, traduzi os títulos das colunas. Apesar de não ser necessário para as análises futuras, isso facilitará futuras aplicações do mesmo dataset.
+
+Em seguida, dividi a coluna de generos em 3 colunas novas. A divisão se deu para que fosse possível contar corretamente a receita de cada genero individualmente. Em conjunto com a divisão, os gêneros também foram traduzidos para o português.
+
+Para a coluna de classificação indicativa, houveram alguns problemas. Além de classificações indicativas de países diversos, incluindo Brasil, EUA e Índia, existem também classificações indicativas que não são mais utilizadas. Apesar disso, há alguns dados redundantes, que foram tratados. Como desafio extra, a empresa pediu que os dados dessa coluna fossem de unificados, trazendo apenas a classificação indicativa brasileira.
+
+Dentro da coluna com informações das receitas, há 11 filmes com valores faltantes. Desses, 2 foram disponibilizados por serviços de streaming, sem que houvesse a venda de ingressos. Para os outros, há possibilidade de encontrar valores de receita em sites. Assim, incluirei diretamente no Power BI as informações de bilheteria para os filmes com informações de bilheteria em sites não afiliados ao IMDb. Para uma localização dos dados, também irei criar uma nova coluna com valores de bilheteria em reais. 
+
+Há também valores faltantes na coluna referente às notas dadas pelo Metacritic. Cerca de 14% dos filmes da base de dados não possuem essa nota. Por se tratar de uma parcela considerável da base, manterei o filme sem notas. Caso seja necessário, poderei incluir uma média de acordo com o gênero principal do filme.
+
+Durante a criação do dashboard, na fase de testes, percebi que um filme estava com a data de ano de lançamento equivocada. O filme, Apollo 13, foi lançado no ano de 1995, enquanto a base de dados constava como 1970. Essa informação foi alterada e depois os dados foram novamente importados para o Power BI
+
+Para a tabela que contém as informações dos posters de cada filme, não houve necessidade de tratamento de dados.
+
+### Tratamentos no Power BI
+
+Após o tratamento de dados, importei os arquivos para a plataforma Power BI. Antes de começar a criação dos relatórios, fiz alguns tratamentos que não foram efetuados por meio do Pandas.
+
+Primeiramente, a coluna de 'Receita' trazia as informações com divisor de milhar, o que fazia com que o Power BI não fizesse contas corretamente. Para corrigir isso, o tipo de dados foi alterado por localidade e o problema foi resolvido. Do mesmo jeito os valores de notas do IMDb e Metacritic foram alterados. De forma automática, o Power BI entendeu os valores como números, porém não considerou os pontos decimais.
+
+Como as informações de gêneros dos filmes e estrelas estavam em colunas distintas, o Power BI não conseguia calcular de maneira rápida e eficaz quando criados filtros. Isso se tornou um problema quando a métrica de valor recebido por diretores e estrela começou a ser mostrada. Para corrigir isso, foram criadas duas tabelas auxiliares 'Gêneros' e 'Estrelas'. Para a tabela dos gêneros, importei novamente a tabela de filmes e exclui todas as colunas, mantendo apenas as colunas 'Id_Title, 'Gênero 1', 'Gênero 2' e 'Gênero 3'. Depois, tranformei as colunas relativas aos gêneros e fiz a tranposição de colunas para linhas. O mesmo tratamento foi feito para a tabela 'Estrelas'.
+
+## Desenvolvimento do Dashboard
+
+O dashboard foi desenvolvido em Power BI. Uma explicação 
