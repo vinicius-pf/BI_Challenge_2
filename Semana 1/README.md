@@ -92,4 +92,8 @@ Como as informações de gêneros dos filmes e estrelas estavam em colunas disti
 
 ## Desenvolvimento do Dashboard
 
-O dashboard foi desenvolvido em Power BI. Uma explicação 
+O dashboard foi desenvolvido em Power BI. A empresa não especificou as cores desejadas, mas disponibilizou imagens de logo para serem usadas. Depois de escolhida a logo, criei o dashboard pensando em um visual escuro, utilizando a cor verde para dar destaque nos dados.
+
+![Página Receitas](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/Screenshots/P%C3%A1gina%20de%20receita%20Atores.PNG?raw=true)
+
+Além da logo, também usei imagens para auxiliar o usuário. Essas imagens foram baixadas do site [Icons DB](https://www.iconsdb.com/), que disponibiliza 4215 ícones para serem utilizados em projetos pessoais ou corporativos.
