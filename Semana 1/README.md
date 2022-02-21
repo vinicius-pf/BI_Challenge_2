@@ -6,63 +6,69 @@ A **Alura Food** tem interesse em **expandir** seu negócio entrando no mercado 
 
 Para isso, ela disponibilizou uma base de dados com informações de restaurantes retiradas do aplicativo Zomato, um aplicativo de busca de restaurantes para pessoas que queres sair para jantar, buscar comidas ou pedir em casa e que está presente em diversos países, como Índia, Brasil, Estados Unidos, Catar, entre outros<sup>[1](https://pt.wikipedia.org/wiki/Zomato)</sup>.
 
+Essas informações foram entregues em 7 arquivos diferentes:
 
+- 5 arquivos do tipo JSON, que tem as informações sobre os restaurantes
+- 1 planilha do Microsoft Excel com um dicionário de código dos países
+- 1 documento do Microsoft Word com descrições sobre os arquivos e suas colunas
 
 ## Métricas
 
 A empresa requisitou que as seguintes métricas estivessem no relatório:
 
-- Dinheiro ganho por Estrela 1, Estrela 2, Estrela 3 e Estrela 4
-- Filmes mais votados
-- Gêneros mais rentáveis
-- Estrelas que mais aparecem nos filmes
-- Percentual dos (n) gêneros mais explorados
+- Filtrar por cidade, restaurantes e se tem reserva
+- Total de restaurantes na Índia
+- Preço Médio
+- Média de avaliação
+- Porcentagem de restaurantes que tem ou não delivery online
+- Cidades que mais possuem restaurantes
+- Culinárias que mais são exploradas da Índia
+- Restaurantes por cidade e suas classificações
 
-Além disso, a empresa também requisitou uma exploração das colunas 'Meta_Score', 'IMDB_Rating' e 'Noofvotes'. Como um bônus, porém sem a necessidade de aparecerem no relatório, a empresa requisitou as seguintes tarefas:
+Como um bônus, porém sem a necessidade de aparecerem no relatório, a empresa requisitou as seguintes tarefas:
 
-- Padronização classificação indicativa
-- Tradução do título das colunas
-- Incluir títulos em português dos filmes
-- Diretores mais rentáveis
-- Pares mais comuns entre diretores e estrelas
+- Preço Médio através das moedas
+- Página de estudo sobre cada restaurante
 
 Para deixar o dashboard mais completo, também incluirei algumas métricas e etapas que acredito que possam agregar a tomada de decisão da empresa:
-- Filmes com maior bilheteria
-- Tradução do resumo dos filmes
+-
+-
+-
 
 
 ### Relacionamentos
 
-As duas tabelas se relacionam em uma cardinalidade de 1:1, por meio da coluna 'Id_Title'.
-
+As 5 arquivos do tipo JSON não se relacionam entre si, porém são complementares uns aos outros.
 
 ## Tratamento de dados
 
-A tabela de Filmes precisou de um tratamento de dados após aplicação de uma análise exploratória. Para isso utilizada a linguagem [Python](https://www.python.org/), com a biblioteca [Pandas](https://pandas.pydata.org/), por meio do [Google Colab](https://colab.research.google.com/). O passo a passo da análise, incluindo comentários e referências esta no arquivo (Tratamento dos dados)[https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/dataset/Tratamento%20dos%20dados.ipynb] na pasta 'dataset'.
-
-Com a análise exploratória, foram constatados alguns pontos de atenção. Esses foram tratados em sua maioria dentro do Python Pandas, outros foram tratados diretamente no Power BI.
-
-Primeiro, para suprir uma das demandas extras da empresa, traduzi os títulos das colunas. Apesar de não ser necessário para as análises futuras, isso facilitará futuras aplicações do mesmo dataset.
-
-Em seguida, dividi a coluna de generos em 3 colunas novas. A divisão se deu para que fosse possível contar corretamente a receita de cada genero individualmente. Em conjunto com a divisão, os gêneros também foram traduzidos para o português.
-
-Para a coluna de classificação indicativa, houveram alguns problemas. Além de classificações indicativas de países diversos, incluindo Brasil, EUA e Índia, existem também classificações indicativas que não são mais utilizadas. Apesar disso, há alguns dados redundantes, que foram tratados. Como desafio extra, a empresa pediu que os dados dessa coluna fossem de unificados, trazendo apenas a classificação indicativa brasileira.
-
-Dentro da coluna com informações das receitas, há 11 filmes com valores faltantes. Desses, 2 foram disponibilizados por serviços de streaming, sem que houvesse a venda de ingressos. Para os outros, há possibilidade de encontrar valores de receita em sites. Assim, incluirei diretamente no Power BI as informações de bilheteria para os filmes com informações de bilheteria em sites não afiliados ao IMDb. Para uma localização dos dados, também irei criar uma nova coluna com valores de bilheteria em reais. 
-
-Há também valores faltantes na coluna referente às notas dadas pelo Metacritic. Cerca de 14% dos filmes da base de dados não possuem essa nota. Por se tratar de uma parcela considerável da base, manterei o filme sem notas. Caso seja necessário, poderei incluir uma média de acordo com o gênero principal do filme.
-
-Durante a criação do dashboard, na fase de testes, percebi que um filme estava com a data de ano de lançamento equivocada. O filme, Apollo 13, foi lançado no ano de 1995, enquanto a base de dados constava como 1970. Essa informação foi alterada e depois os dados foram novamente importados para o Power BI
-
-Para a tabela que contém as informações dos posters de cada filme, não houve necessidade de tratamento de dados.
+Primeiramente decidi tratar os dados via [Python Pandas](https://pandas.pydata.org/). Porém os arquivos JSON estão com informações aninhadas, isto é: as informações referentes ao restaurante estão em uma lista dentro de uma outra lista. Após tentar algumas soluções sem sucesso, migrei o tratamento das tabelas para a plataforma Power BI. Ao migrar para o Power BI, perdi algumas facilidades para limpeza de dados que a biblioteca Pandas permite, porém consegui resolver meu problema.
 
 ### Tratamentos no Power BI
 
-Após o tratamento de dados, importei os arquivos para a plataforma Power BI. Antes de começar a criação dos relatórios, fiz alguns tratamentos que não foram efetuados por meio do Pandas.
+#### Tratamento arquivos individuais
+Para iniciar o tratamento, importei o arquivo 'file1.json' para a ferramenta. O arquivo entao foi lido e navegado até que as colunas do arquivo fossem mostradas.
 
-Primeiramente, a coluna de 'Receita' trazia as informações com divisor de milhar, o que fazia com que o Power BI não fizesse contas corretamente. Para corrigir isso, o tipo de dados foi alterado por localidade e o problema foi resolvido. Do mesmo jeito os valores de notas do IMDb e Metacritic foram alterados. De forma automática, o Power BI entendeu os valores como números, porém não considerou os pontos decimais.
+![Primeira Etapa](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%202/Screenshots/Documenta%C3%A7%C3%A3o%20Tratamento/expandindo%20a%20coluna.PNG?raw=true)
 
-Como as informações de gêneros dos filmes e estrelas estavam em colunas distintas, o Power BI não conseguia calcular de maneira rápida e eficaz quando criados filtros. Isso se tornou um problema quando a métrica de valor recebido por diretores e estrela começou a ser mostrada. Para corrigir isso, foram criadas duas tabelas auxiliares 'Gêneros' e 'Estrelas'. Para a tabela dos gêneros, importei novamente a tabela de filmes e exclui todas as colunas, mantendo apenas as colunas 'Id_Title, 'Gênero 1', 'Gênero 2' e 'Gênero 3'. Depois, tranformei as colunas relativas aos gêneros e fiz a tranposição de colunas para linhas. O mesmo tratamento foi feito para a tabela 'Estrelas'.
+Como primeiro problema, vi que as colunas não correspondiam com as informações que a empresa me passou. Ao estudar o arquivo, entendi que as informações requisiatadas pela empresa estavam dento da coluna *restaurants*, e que as outras podiam ser ignoradas para esse processo.
+
+![Segunda Etapa](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%202/Screenshots/Documenta%C3%A7%C3%A3o%20Tratamento/informa%C3%A7%C3%A3o%20dos%20restaurantes.PNG?raw=true)
+
+Por último, naveguei até que as informações desejadas dos restaurantes fossem exibidas.
+
+![Terceira Etapa](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%202/Screenshots/Documenta%C3%A7%C3%A3o%20Tratamento/informa%C3%A7%C3%B5es%20completas.PNG?raw=true)
+
+Esses tratamentos foram iguais para os 5 arquivos JSON. Após isso, concatenei os arquivos utilizando a funcinalidade 'Acrescentar Consultas como Novas'. Essa funcinalidade me permitiu ter uma tabela única com as informações combinadas dos 5 arquivos. Para essa tabela dei o nome de 'Restaurantes'
+
+#### Tratamento da tabela 'Restaurantes'
+
+Com a tabela criada, a limpeza dos dados, que seria igual nos 5 arquivos, foi unificada. Essa tabela continha mais de 29753 linhas com informações de restaurantes. Além dessas, 848 linhas estavam sem informações. Para essas linhas serem excluidas, considerei que a coluna 'restaurants.restaurant.id' como sendo não nula e também que deve ser única, o que me levou a excluir valores duplicados também nesta coluna.
+
+Após essas tranformações, retirei de outras listas informações sobre os comentários e notas sobre o restaurante, vindos da coluna 'restaurants.restaurant.user_rating'  e também sobre a localização, da coluna 'restaurants.restaurant.location'. Outras duas colunas ('restaurants.restaurant.offers' e 'restaurants.restaurant.establishment_types') foram excluidas por nao trazerem informação relevante.
+
+Para terminar, a coluna com informação do tipo de culinária dos restaurantes foi dividida e algumas colunas foram renomeadas de acordo com as necessidades da empresa e do documento Word incluso.
+
 
 ## Desenvolvimento do Dashboard
 
