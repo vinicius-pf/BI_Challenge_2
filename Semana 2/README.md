@@ -70,7 +70,7 @@ Após essas tranformações, retirei de outras listas informações sobre os com
 
 Outras duas colunas ('offers' e 'establishment_types') também continham informações aninhadas, porém houve erro no momento de extração das informações. As colunas 'api.key' e 'deeplink' contém informações internas do aplicativo e a coluna 'res_id' contém as mesmas informações que a coluna 'id'. De acordo com a empresa, a coluna 'switch_to_order_menu' contém informações para trocar o tipo de menu, informação que não será aproveitada no dashboard, assim como a coluna 'zipcode', com informações de CEP dos restaurantes, porém com muitas informações faltantes. Essas colunas foram excluidas do modelo para melhorar a legibilidade e performance. 
 
-Para terminar, a coluna com informação do tipo de culinária dos restaurantes foi dividida para que as informações possam ser iteradas. Também renomeei algumas colunas de acordo com a descrição dada pela empresa e defini o tipo de dados de cada coluna.
+Para terminar, a coluna com informação do tipo de culinária dos restaurantes foi dividida em 5 colunas distintas para permitir a iteração entre os tipos de culinária. Também renomeei algumas colunas de acordo com a descrição dada pela empresa e defini o tipo de dados de cada coluna.
 
 Título Original | Descrição da empresa | Título Novo | Tipo Definido
 --------------- | -------------------- | ----------- | -------------
@@ -84,21 +84,27 @@ name | Nome do restaurante | Nome do Restaurante | Texto
 cuisines | Cozinhas oferecidas pelo restaurante | Cozinhas dos restaurantes | Texto
 is_delivering_now | Está a entregar | Está entregando agora? | Texto binário
 menu_url | *a empresa não forneceu informação*| URL para o Menu|
-average_cost_for_two|Custo para dois pessoas em diferentes moedas|Custo para duas pessoas|
-has_table_booking|Tem Reserva de mesa|Aceita reserva?|
+average_cost_for_two|Custo para dois pessoas em diferentes moedas|Custo para duas pessoas| Número decimal fixo
+has_table_booking|Tem Reserva de mesa|Aceita reserva?| Texto Binário
 book_url|*a empresa não forneceu informação*|URL para reserva|
-latitude|Coordenada de latitude da localização do restaurante|Latitude|
-address|Endereço do restaurante|Endereço|
-city|Cidade em que o restaurante está localizado|Cidade|
-country_id|País em que o restaurante está localizado|ID do País|
-longitude|Coordenada de longitude da localização do restaurante|Longitude|
-currency|Moeda do país|Moeda|
-locality_verbose|Descrição detalhada da localidade|Endereço completo|
+latitude|Coordenada de latitude da localização do restaurante|Latitude| Texto
+address|Endereço do restaurante|Endereço| Texto
+city|Cidade em que o restaurante está localizado|Cidade| Texto
+country_id|País em que o restaurante está localizado|ID do País| Texto
+longitude|Coordenada de longitude da localização do restaurante|Longitude| Texto
+currency|Moeda do país|Moeda| Texto
+locality_verbose|Descrição detalhada da localidade|Endereço completo| Texto
 featured_imag|*a empresa não forneceu informação*|Imagem do Local|
-id|ID exclusivo de cada restaurante em várias cidades do mundo|ID do Restaurante|
+id|ID exclusivo de cada restaurante em várias cidades do mundo|ID do Restaurante| Texto
 url|*a empresa não forneceu informação*|Url do Restaurante|
 photos_url|*a empresa não forneceu informação*|URL de fotos|
-city_id|*a empresa não forneceu informação*|ID da Cidade|
+city_id|*a empresa não forneceu informação*|ID da Cidade| Texto
+
+Após as correções de tipo e de informações, a base de dados diminuiu de 30601 linhas para 9577 linhas. A diminuição das informações irá auxiliar na criação de um dashboard mais focado nas necessidades da empresa.
+
+Além da limpeza de dados, também criei duas hierarquias de dados dentro do Power BI. Essas hierarquias permitirão que o dashboard seja mais organizado e dinâmico.
+A primeira Hierarquia tem informações da localização, com informações de País e Cidade. A segunda de reviews dos usuários, com a classificação do app e as notas.
+
 
 
 
