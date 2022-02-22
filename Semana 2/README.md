@@ -73,7 +73,7 @@ Outras duas colunas ('offers' e 'establishment_types') também continham informa
 Para terminar, a coluna com informação do tipo de culinária dos restaurantes foi dividida para que as informações possam ser iteradas. Também renomeei algumas colunas de acordo com a descrição dada pela empresa e defini o tipo de dados de cada coluna.
 
 Título Original | Descrição da empresa | Título Novo | Tipo Definido
------------------------------------------------------
+--------------- | -------------------------------- | -------------------
 has_online_delivery|Tem Entrega online|Tem entrega Online?|Texto binário
 price_range |Faixa de preço da comida|Faixa de Preço|Texto
 rating_text|Texto com base na classificação da classificação|Review dos usuários|Texto
