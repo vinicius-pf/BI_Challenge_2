@@ -73,17 +73,17 @@ Outras duas colunas ('offers' e 'establishment_types') também continham informa
 Para terminar, a coluna com informação do tipo de culinária dos restaurantes foi dividida para que as informações possam ser iteradas. Também renomeei algumas colunas de acordo com a descrição dada pela empresa e defini o tipo de dados de cada coluna.
 
 Título Original | Descrição da empresa | Título Novo | Tipo Definido
---------------- | -------------------------------- | -------------------
-has_online_delivery|Tem Entrega online|Tem entrega Online?|Texto binário
-price_range |Faixa de preço da comida|Faixa de Preço|Texto
-rating_text|Texto com base na classificação da classificação|Review dos usuários|Texto
-rating_color|Cor dependente da classificação média|Cor da review|Texto
-votes|Número de classificações feitas por pessoas|Número de Votos|Número inteiro
-aggregate_rating|Classificação agregada (de 0 a 5)|Média de votos|Número decimal fixo
-name|Nome do restaurante|Nome do Restaurante|Texto
-cuisines|Cozinhas oferecidas pelo restaurante|Cozinhas dos restaurantes|Texto
-is_delivering_now|Está a entregar|Está entregando agora?|Texto binário
-menu_url|*a empresa não forneceu informação*|URL para o Menu|
+--------------- | -------------------- | ----------- | -------------
+has_online_delivery | Tem Entrega online | Tem entrega Online? | Texto binário
+price_range | Faixa de preço da comida | Faixa de Preço | Texto
+rating_text | Texto com base na classificação da classificação | Review dos usuários | Texto
+rating_color | Cor dependente da classificação média | Cor da review | Texto
+votes | Número de classificações feitas por pessoas | Número de Votos | Número inteiro
+aggregate_rating | Classificação agregada (de 0 a 5) | Média de votos | Número decimal fixo
+name | Nome do restaurante | Nome do Restaurante | Texto
+cuisines | Cozinhas oferecidas pelo restaurante | Cozinhas dos restaurantes | Texto
+is_delivering_now | Está a entregar | Está entregando agora? | Texto binário
+menu_url | *a empresa não forneceu informação*| URL para o Menu|
 average_cost_for_two|Custo para dois pessoas em diferentes moedas|Custo para duas pessoas|
 has_table_booking|Tem Reserva de mesa|Aceita reserva?|
 book_url|*a empresa não forneceu informação*|URL para reserva|
