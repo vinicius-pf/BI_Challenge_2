@@ -31,6 +31,7 @@ Como um bônus, porém sem a necessidade de aparecerem no relatório, a empresa 
 - Página de estudo sobre cada restaurante
 
 Para deixar o dashboard mais completo, também incluirei algumas métricas e etapas que acredito que possam agregar a tomada de decisão da empresa:
+
 -
 -
 -
@@ -65,7 +66,7 @@ Esses tratamentos foram iguais para os 5 arquivos JSON. Após isso, concatenei o
 
 Com a tabela criada, a limpeza dos dados, que seria igual nos 5 arquivos, foi unificada. Essa tabela continha mais de 29753 linhas com informações de restaurantes. Além dessas, 848 linhas estavam sem informações. Para essas linhas serem excluidas, considerei que a coluna 'restaurants.restaurant.id' como sendo não nula e também que deve ser única, o que me levou a excluir valores duplicados também nesta coluna.
 
-Após essas tranformações, retirei de outras listas informações sobre os comentários e notas sobre o restaurante, vindos da coluna 'restaurants.restaurant.user_rating'  e também sobre a localização, da coluna 'restaurants.restaurant.location'. Outras duas colunas ('restaurants.restaurant.offers' e 'restaurants.restaurant.establishment_types') foram excluidas por nao trazerem informação relevante.
+Após essas tranformações, retirei de outras listas informações sobre os comentários e notas sobre o restaurante, vindos da coluna 'restaurants.restaurant.user_rating' e também sobre a localização, da coluna 'restaurants.restaurant.location'. Outras duas colunas ('restaurants.restaurant.offers' e 'restaurants.restaurant.establishment_types') também continham informações aninhadas, porém houve erro no momento de extração das informações. Por isso, exclui essas colunas.
 
 Para terminar, a coluna com informação do tipo de culinária dos restaurantes foi dividida e algumas colunas foram renomeadas de acordo com as necessidades da empresa e do documento Word incluso.
 
