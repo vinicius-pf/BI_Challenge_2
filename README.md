@@ -75,10 +75,12 @@ Para os rankings de filmes, o primeiro gráfico passa a mostrar os filmes com ma
 Na última página do relatório, é exibido um resumo sobre cada filme. Com o filtro superior, é possível digitar o título do filme, o que altera as informações da página para o filme selecionado. Para cada filme, existem informações de: duração, ano de lançamento, receita, nota no IMDb, diretor, ator principal e coadjuvante, classificação indicativa, poster e uma breve sinopse do filme.
 
 
-
-
-
 ### Semana 2 Entendendo o mercado de restaurantes da Índia.
+
+[Clique aqui para ir ao dashboard](https://bit.ly/Semana2_Challenge)
+
+
+![Página Inicial](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/Screenshots/P%C3%A1gina%20inicial.PNG?raw=true)
 
 ### Semana 3 Analisando o setor de vendas da Alura Skimó.
 
