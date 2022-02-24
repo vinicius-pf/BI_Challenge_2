@@ -13,6 +13,8 @@ Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://
       - [Página de Rankings](#página-de-rankings)
       - [Página de filmes](#página-de-filmes)
     + [Semana 2 Entendendo o mercado de restaurantes da Índia.](#semana-2-entendendo-o-mercado-de-restaurantes-da-índia)
+      - [Página Inicial](#página-inicial)
+      - [Página de Restaurantes](#página-de-restaurantes)
     + [Semana 3 Analisando o setor de vendas da Alura Skimó.](#semana-3-analisando-o-setor-de-vendas-da-alura-skimó)
 
 
