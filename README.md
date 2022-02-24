@@ -80,7 +80,33 @@ Na última página do relatório, é exibido um resumo sobre cada filme. Com o f
 [Clique aqui para ir ao dashboard](https://bit.ly/Semana2_Challenge)
 
 
-![Página Inicial](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%201/Screenshots/P%C3%A1gina%20inicial.PNG?raw=true)
+![Página Inicial](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%202/Screenshots/P%C3%A1gina%20Inicial.PNG?raw=true)
+
+Para a segunda semana, a empresa Alura Foods entrou em contato. A empresa visa expandir o seu negócio, desejando entrar no mercado indiano. Para isso, disponibilizou uma base de dados com informações dos restaurantes do aplicativo [Zomato](https://www.zomato.com/). A empresa então requisitou que algumas informações estivessem presentes no dashboard, para que as decisões fossem tomadas com mais clareza. 
+
+Para esse dashboard, criei 2 páginas. A primeira página traz as informações requisitadas pela empresa. A segunda também é um pedido da empresa, contendo um relatório dos restaurantes. Ambas as páginas contém 2 botões no canto esquerdo: o superior leva à página inicial, enquanto o inferior à página de relatório dos restaurantes. 
+
+Para esse dashboard, aproveitei as cores presentes na logo da empresa: cinza e verde, e inclui as cores laranja e azul, para lembrar a bandeira indiana.
+
+#### Página Inicial
+A primeira página do dashboard, que também é a página de apresentação, mostra as informações que a empresa requisitou. Há 3 filtros de dados: um para Restaurantes, outro para cidades e um terceiro para selecionar os restaurantes que aceitam ou não reservas.
+
+Ao lado do filtro de reservas, há 3 cartões que mostram as informações de número de restaurantes, o preço médio para duas pessoas em Rupias e a média de notas dos restaurantes no aplicativo, que varia de 0 a 5. Há dois gráficos de barras, com contagens de número de restaurantes por culinária principal e por cidades. Esses gráficos de barras são responsivos e filtram as informações das outras informações da página. Por último, há 2 gráficos de pizza, que mostram a porcentagem de restaurantes que aceitam reserva e que tem entrega online.
+
+![Dica de ferramentas](https://github.com/vinicius-pf/BI_Challenge_2/blob/main/Semana%202/Screenshots/Dica%20de%20ferramentas.PNG?raw=true)
+
+Nos 4 gráficos presentes na página inicial, inclui uma dica de ferramentas que mostra o número de restaurantes, o preço médio, a nota média e uma tabela com os 5 restaurantes mais bem avaliados.
+
+#### Página de Restaurantes
+
+![Página de Restaurantes](https://user-images.githubusercontent.com/6025360/155611322-71f2a1ee-0ec5-44fa-8277-4da85f4eb786.png)
+
+Apesar da empresa ter requisitado essa página, não foi especificado nenhum visual. É possível filtrar por restaurante, usando o filtro, ou por cidades, utilizando o mapa. Os filtros selecionados irão afetar os outros visuais, incluindo o título da página, que é o nome do restaurante selecionado.
+
+Os cartões ao lado do filtro de restaurante trazem as informações sobre delivery, reserva ou entrega do restaurante. Abaixo, é possível ver as informações de preço em rúpias, em dólares, em euros e em reais. Também é possível ver a quantidade de cidades que um restaurante está presente, o número de estabelecimentos e também as informações de review dos usuários: nota média, avaliação do aplicativo e número de votos.
+
+Por último, entre o mapa e o filtro encontram-se dois botões. O primeiro leva ao site com o menu do restaurante, o segundo para um site com as fotos do local.
+
 
 ### Semana 3 Analisando o setor de vendas da Alura Skimó.
 
