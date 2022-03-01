@@ -2,7 +2,7 @@
 
 ## Dashboard Operacional
 
-Nesta última semana do desafio a Alura Store disponibilizou um banco de dados da área financeira da empresa e requisitou um relatório com 2 páginas: a primeira com um *overview* financeiro e a segunda com uma área para a análise de hipóteses.
+A Alura Skimo necessita acompanhar suas vendas através de um painel que comporte todas métricas necessárias.
 
 ## Base de Dados
 
