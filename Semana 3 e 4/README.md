@@ -94,8 +94,52 @@ A hierarquia **Produtos** foi criada para poder visualizar informações de cate
 
 ![image](https://user-images.githubusercontent.com/6025360/156256494-2d961a0f-6fca-49ca-ba5d-d82de5a7dea9.png)
 
-### Medidas
-
-
 ## Desenvolvimento do Dashboard
+
+O dashboard foi desenvolvido em Power BI utlizando uma paleta de cores derivada do logo da empresa. Durante o desenvolvimento das medidas e dos visuais, decidi mudar um pouco o layout do mesmo para facilitar o entendimento. Como um bônus, também foi criada uma página para análise de cenários, estimando custos, lucro e faturamento ao modificar alguma varíavel como preço unitário ou unidade vendida.
+
+Para a criação dos dashboards financeiro, de vendedores e de produtos, foram criadas algumas métricas para fazer o cálculo do valor. A criação de métricas permite uma legibilidade maior e fácil transferência de ideias.
+
+![image](https://user-images.githubusercontent.com/6025360/156448445-c07d8262-db9a-4a68-b394-8db10ec8baa1.png)
+
+Medida  | Fórumla DAX | Descrição
+---------|--------|---------------
+Comissão | SUMX(Vendedores,[Faturamento] * Vendedores[Comissão]) | Calcula a comissão total e por vendedor.
+Custo | SUMX('Itens do Pedido', [Quantidade Vendida] * RELATED(Produtos[Custo])) | Calcula o custo de produção
+Faturamento | SUMX('Itens do Pedido', [Quantidade Vendida] * RELATED(Produtos[Preço])) | Calcula o faturamento total das vendas.
+Lucro | [Faturamento] - [Custo] - [Comissão] | Calcula o lucro final.
+Qtd Itens Vendidos | SUM('Itens do Pedido'[Quantidade Vendida]) | Mostra a quantidade de itens vendidos.
+Qtd Vendas | COUNT(Pedido[ID Pedido]) | Exibe a quantidade total de vendas no período.
+Ticket Médio | DIVIDE([Faturamento], [Qtd Vendas], 0) | Calcula o ticket médio por venda.
+
+Além das medidas anteriores, foi criadas uma nova tabela, que terá medidas para serem utilizadas na página de análise de cenários. Em conjunto com a nova tabela, foram criados parâmetros para serem ajustados pelo cliente. 
+
+
+![image](https://user-images.githubusercontent.com/6025360/156449924-6c1f5ca4-ea6e-4c8b-a9cc-6f40389a59e7.png)
+
+
+Todos os parâmetros foram criados da mesma forma:
+
+![image](https://user-images.githubusercontent.com/6025360/156449800-ad858d09-d825-4efa-8a61-4c834da2ec3f.png)
+
+Após a criação dos parâmetros, foi possível criar as novas medidas para a página de cenários.
+
+![image](https://user-images.githubusercontent.com/6025360/156450025-b795f349-cd81-430c-ac96-d94e65a97864.png)
+
+Medida  | Fórumla DAX | Descrição
+---------|--------|---------------
+Comissão prevista | *'_Medidas'[Comissão]*(1 - (((-1)*'% Comissão'[% Comissão Valor])))*  | Calcula a comissão com base nas mudanças.
+Custo previsto | *'_Medidas'[Custo]*(1 - (((-1)*'% Custo'[% Custo Valor])))* | Calcula o novo custo
+Faturamento Previsto | *([Ticket Previsto] * [Quantidade prevista]) * (1 + SELECTEDVALUE('% Quantidade'[% Quantidade], 0))* | Calcula o faturamento total, baseado na quantidade vendida e no preço do produto.
+Lucro Previsto | [Preço Previsto] - [Custo previsto] - [Comissão prevista] | Calcula o lucro final.
+Preço Previsto | *'_Medidas'[Faturamento]*(1 - (((-1)*'% Preço'[% Preço Valor])))* | Calcula o preço com base nas mudanças.
+Quantidade prevista | *[Qtd Itens Vendidos] * (1 - (((-1) * '% Quantidade'[% Quantidade Valor])))*| Exibe a quantidade de itens vendidos.
+Ticket Previsto | DIVIDE([Preço Previsto], [Quantidade prevista],0)) | Calcula o ticket médio por item, considerando o preço final previsto e a quantidade prevista.
+
+
+
+
+
+
+
 
