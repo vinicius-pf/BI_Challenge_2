@@ -1,6 +1,6 @@
 # [Semana 2](https://bit.ly/Semana2_Alura) - Alura Challenge BI
 
-A **Alura Skimo **necessita acompanhar suas **vendas** através de um painel que comporte todas métricas necessárias. 
+A **Alura Skimo** necessita acompanhar suas **vendas** através de um painel que comporte todas métricas necessárias. 
 
 ## Base de Dados
 
@@ -78,7 +78,7 @@ Após esses tratamentos, comecei a criação das hierarquias. Como uma das hiera
 
 ![image](https://user-images.githubusercontent.com/6025360/156255857-db4720a6-9f52-434f-aa8a-57cd8ca8d30a.png)
 
-Durante o desenvolvimento do dashboard, percebi que existiam informações incompletas. Há informações na tabela *itens_pedido* que não estão presentes na tabela *pedidos*: os pedidos com ID '3375', '53715', '70186' e '77333' estão apenas com informações de quantidades vendidas, mas não contém informações de datas de vendas, vendedor ou cliente. Essas informações estão em 14 linhas da base de dados, de um total de 213.364 linhas na tabela *itens_pedido* e em 4 linhas dentro de um total de 87.873 linhas na tabela *pedidos*. Por isso, irei excluir as linhas do modelo e informarei a empresa para que isso possa ser corrigido. 
+Durante o desenvolvimento do dashboard, percebi que existiam informações incompletas. Há informações na tabela *itens_pedido* que não estão presentes na tabela *pedidos*: os pedidos com ID '3375', '53715', '70186' e '77333' estão apenas com informações de quantidades vendidas, mas não contém informações de datas de vendas, vendedor ou cliente. Há também o pedido nº '121', que utiliza um CPF não cadastrado na base de dados e o pedido '146, que utiliza um produto não cadastrado. Essas informações estão em 20 linhas da base de dados, de um total de 213.364 linhas na tabela *itens_pedido* e em 6 linhas dentro de um total de 87.873 linhas na tabela *pedidos*. Para esse dashboard, irei excluir as linhas com as informações equivocadas e informarei a empresa a respeito dos erros.
 
 Após a criação da tabela e limpeza dos dados, foi possível criar as hierarquias desejadas.
 
