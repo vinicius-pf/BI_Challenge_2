@@ -1,4 +1,4 @@
-# [Semana 2](https://bit.ly/Semana2_Alura) - Alura Challenge BI
+# [Semana 3](https://bit.ly/Semana2_Alura) - Alura Challenge BI
 
 A **Alura Skimo** necessita acompanhar suas **vendas** através de um painel que comporte todas métricas necessárias. 
 
