@@ -112,6 +112,7 @@ Por último, entre o mapa e o filtro encontram-se dois botões. O primeiro leva 
 
 ### Semana 3 Analisando o setor de vendas da Alura Skimó.
 
+[Clique aqui para ir ao dashboard](https://bit.ly/Semana3_Challenge)
 
 
 
