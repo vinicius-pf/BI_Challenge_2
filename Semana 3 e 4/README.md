@@ -1,4 +1,4 @@
-# [Semana 3](https://bit.ly/Semana2_Alura) - Alura Challenge BI
+# [Semana 3](https://bit.ly/Semana3_Alura) - Alura Challenge BI
 
 A **Alura Skimo** necessita acompanhar suas **vendas** através de um painel que comporte todas métricas necessárias. 
 
@@ -136,7 +136,7 @@ Preço Previsto | *'_Medidas'[Faturamento]*(1 - (((-1)*'% Preço'[% Preço Valor
 Quantidade prevista | *[Qtd Itens Vendidos] * (1 - (((-1) * '% Quantidade'[% Quantidade Valor])))*| Exibe a quantidade de itens vendidos.
 Ticket Previsto | DIVIDE([Preço Previsto], [Quantidade prevista],0)) | Calcula o ticket médio por item, considerando o preço final previsto e a quantidade prevista.
 
-
+Com as medidas criadas, o dashboard foi desenvolvido com 3 páginas. A página inicial trará algumas informações pedidas como faturamento, lucro e quantidade vendida. A segunda página trará rankings de vendedores por faturamento, de produtos por faturamento e de cidades. Esses 3 visuais terão dicas de ferramentas trazendo mais informações. A terceira e última página servirá para fazer a análise de cenários, onde será possível alterar alguma métrica e saber como isso mudará as métricas de negócio.
 
 
 
