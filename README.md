@@ -16,6 +16,9 @@ Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://
       - [Página Inicial](#página-inicial)
       - [Página de Restaurantes](#página-de-restaurantes)
     + [Semana 3 Analisando o setor de vendas da Alura Skimó.](#semana-3-analisando-o-setor-de-vendas-da-alura-skimó)
+      - [Página Inicial](#página-inicial)
+      - [Página Rankings](#página-rankings)
+      - [Página Cenários](#página-cenários)
 
 
 ## Projetos desenvolvidos
@@ -114,6 +117,51 @@ Por último, entre o mapa e o filtro encontram-se dois botões. O primeiro leva 
 
 [Clique aqui para ir ao dashboard](https://bit.ly/Semana3_Challenge)
 
+![image](https://user-images.githubusercontent.com/6025360/157110891-af299739-5f71-417d-ab3a-89333e91c8fa.png)
+
+Durante a 3ª Semana, a empresa Alura Skimó me procurou para o desenvolvimento de um dashboard de vendas, para que fossem acessíveis as principais métricas do negócio, assim como permitir um planejamento para o futuro. A empresa forneceu um bando de dados MySQL para que a solução fosse desenvolvida. O dashboard foi desenvolvido com 3 páginas, que trazem as métricas pedidas na primeira página, rankings na segunda e a análise de cenários na última página.
+
+Em todas as páginas, na parte esquerda do dashboard, encontram-se botões de navegação para as outras páginas do relatório.
+
+No desenvolvimento do dashboard, utilizei uma paleta de cores baseada na logo da empresa pelo [Adobe Color](https://color.adobe.com/pt/create/color-wheel).
+ 
+#### Página Inicial
+
+A página inicial traz as informações gerais referentes à base de dados da empresa e funciona . Um gráfico cascata traz o faturamento total, o valor da comissão, o custo de produção e por último o lucro. Do lado, 2 cartões trazem as informações de número de vendas e também o ticket médio por compra. Um gráfico de linhas mostra o faturamento ao longo do tempo e inclui uma previsão de faturamento para os dois próximos trimestres.
+
+![image](https://user-images.githubusercontent.com/6025360/157112218-171e97bc-dceb-4532-ae32-87636fb35588.png)
+
+O gráfico do faturamento traz uma dica de ferramentas com as informações de faturamento, custo, lucro e quantidade vendidas em cada trimeste. 
+
+Na parte superior, incluí 4 botões para fazer a filtragem dos dados por ano, podendo ser escolhidos mais de 1 ano por vez. Do lado dos cartões, há também 2 segmentações de dados: uma por cidade, e outra por vendedor. Esses filtros alteram as informações dos gráficos e das dicas de ferramentas.
+
+#### Página Rankings
+
+![image](https://user-images.githubusercontent.com/6025360/157112603-666f1559-93d3-4577-9fd6-371fe05dd42b.png)
+
+Na segunda página do relatório, trouxe informações de rankings sobre os vendedores, no gráfico a esquerda, e sobre os produtos, com o gráfico ao centro. Na parte direita do dashboard, foi criado um mapa, com informações de vendas por cidade. Na parte de cima, é possível verificar e aplicar dois filtros nos visuais: por tamanho ou sabores  
+
+![image](https://user-images.githubusercontent.com/6025360/157113449-6a2e0472-35de-47d3-b1f1-c2c2e003d68a.png)
+
+O gráfico de vendedores mostra a ordem dos vendedores com mais faturamento. Esse gráfico traz uma dica de ferramentas informando a quantidade de vendas do vendedor e a comissão total do vendedor.
+
+![image](https://user-images.githubusercontent.com/6025360/157113471-fa2b81c1-5c0c-4c93-9f50-a142d63e2bc0.png)
+
+O gráfico de vendas por categoria mostra a quantidade de vendas por categoria do produto. Caso seja habilitado  a função *drill down* pelo botão do visual, ao se clicar em uma categoria, as informações do gráfico irá mudar para a quantidade de vendas por sabor dentro da categoria desejada.
+
+![image](https://user-images.githubusercontent.com/6025360/157113787-c0548936-23a7-4781-9984-43b33d098668.png)
+
+![image](https://user-images.githubusercontent.com/6025360/157113757-b3507f1c-435d-409c-87c0-08c1b8e669a3.png)
+
+Por último, o mapa mostra o faturamento por cidade e conta com uma dica de ferramentas contendo uma tabela com os bairros em que a empresa mais faturou.
+
+![image](https://user-images.githubusercontent.com/6025360/157113944-01a5ad6b-b25d-411a-9b3a-4366a0fa6682.png)
+
+#### Página Cenários
+
+![image](https://user-images.githubusercontent.com/6025360/157113987-613a64fb-4978-48e2-bf4b-2b1e59c168a9.png)
+
+Para a página de cenários, foram desenvolvidas métricas específicas com base nos parâmetros informados pelo usuário. Nela é possível saber como as métricas principais de faturamento, custo e lucro se comportarão ao aumentarmos ou diminuirmos o custo de produção, a comissão dos vendedores e o preço de venda dos produtos. 
 
 
 
